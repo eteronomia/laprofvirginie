@@ -1,0 +1,239 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="About — La Prof Virginie" description="Meet Virginie, your personal French guide. A passionate native speaker and certified teacher helping students worldwide speak authentic, accurate French.">
+  <Navbar />
+
+  <!-- ===== HERO ===== -->
+  <section class="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+    <!-- Background image -->
+    <div class="absolute inset-0">
+      <img src="/images/about-hero.jpg" alt="Virginie" class="w-full h-full object-cover object-top" />
+      <div class="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/20 to-cream/90"></div>
+    </div>
+
+    <!-- Glass heading panel -->
+    <div class="relative z-10 text-center px-6 mt-16">
+      <div class="glass-strong inline-block px-10 py-8 md:px-16 md:py-12">
+        <p class="text-gold text-sm font-semibold tracking-[0.25em] uppercase mb-3">Meet Your Teacher</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal leading-tight">
+          Your Personal<br/>
+          <span class="text-gold">French Guide</span>
+        </h1>
+      </div>
+    </div>
+
+    <!-- Floating decorations -->
+    <div class="decoration top-20 right-[10%] text-gold text-6xl float" style="animation-delay: -2s;">&#10022;</div>
+    <div class="decoration bottom-32 left-[8%] text-gold text-4xl float-reverse" style="animation-delay: -1s;">&#9733;</div>
+  </section>
+
+  <!-- ===== VIDEO SECTION ===== -->
+  <section id="video" class="section-padding relative overflow-hidden bg-cream">
+    <div class="max-w-6xl mx-auto">
+      <!-- Heading with animated highlights -->
+      <div class="text-center mb-12 md:mb-16 reveal">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal leading-tight">
+          Turning <span class="text-highlight italic text-gold-dark">'Oh La La!'</span> Moments<br class="hidden sm:block"/>
+          Into <span class="text-highlight italic text-gold-dark">'Voil&agrave;!'</span>
+        </h2>
+      </div>
+
+      <!-- Video + Text row -->
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <!-- Round video player -->
+        <div class="flex-shrink-0 reveal">
+          <div class="video-round mx-auto" style="width: 280px; height: 280px;">
+            <video
+              src="/video/intro.mp4"
+              poster="/images/about-preview.jpg"
+              controls
+              playsinline
+              preload="metadata"
+            ></video>
+          </div>
+        </div>
+
+        <!-- Text panel -->
+        <div class="glass p-8 md:p-10 flex-1 reveal" style="animation-delay: 0.2s;">
+          <p class="text-charcoal/80 leading-relaxed text-base md:text-lg mb-4">
+            I'm Virginie, your Certified French Teacher, and I'm passionate about helping my students speak authentic, accurate French.
+          </p>
+          <p class="text-charcoal/70 leading-relaxed text-sm md:text-base mb-4">
+            Thousands of students follow my lessons on Instagram, and hundreds have gained confidence through my one-on-one personalised coaching.
+          </p>
+          <p class="text-charcoal/70 leading-relaxed text-sm md:text-base">
+            My goal is to train you to speak French naturally, while ensuring your language is precise and correct.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decoration -->
+    <div class="absolute -top-10 -right-20 w-80 h-80 bg-gold/5 rounded-full blur-[100px] pointer-events-none"></div>
+  </section>
+
+  <!-- ===== BIO / STORY SECTION ===== -->
+  <section class="section-padding relative overflow-hidden">
+    <!-- Subtle gold gradient bg -->
+    <div class="absolute inset-0 bg-gradient-to-br from-cream via-cream-dark/30 to-cream pointer-events-none"></div>
+
+    <div class="relative max-w-6xl mx-auto">
+      <div class="text-center mb-10 reveal">
+        <p class="text-gold text-sm font-semibold tracking-[0.25em] uppercase mb-3">My Story</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-charcoal">
+          Discover the Joy of Learning French<br class="hidden md:block"/>
+          <span class="text-gold">With a Passionate Mentor</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+        <!-- Photo column -->
+        <div class="reveal">
+          <div class="glass p-3 md:p-4">
+            <img
+              src="/images/full-body.jpg"
+              alt="Virginie full portrait"
+              class="w-full rounded-2xl object-cover max-h-[600px]"
+            />
+          </div>
+        </div>
+
+        <!-- Story text column -->
+        <div class="space-y-5 reveal" style="animation-delay: 0.15s;">
+          <div class="glass p-6 md:p-8">
+            <p class="text-charcoal/80 leading-relaxed text-base md:text-lg mb-5">
+              If your time is limited and you prefer to learn at your own pace, I also offer two online programs. One mini-course designed especially for travellers going to France who want the essentials to get by (like ordering a croissant!) but also impress their friends and the French!
+            </p>
+            <p class="text-charcoal/80 leading-relaxed text-base md:text-lg mb-5">
+              The second program is dedicated to mastering French grammar and verbs in depth, so you can finally speak accurately and without hesitation.
+            </p>
+            <p class="text-charcoal/70 leading-relaxed text-sm md:text-base mb-5">
+              I know firsthand the challenges of learning another language &mdash; I have learned and am still learning English, Portuguese, and now tackling Italian!
+            </p>
+            <p class="text-charcoal/70 leading-relaxed text-sm md:text-base">
+              That's why I've designed all my courses to be both effective and enjoyable, helping you reach your language goals with ease.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorations -->
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-gold/4 rounded-full blur-[80px] pointer-events-none"></div>
+  </section>
+
+  <!-- ===== I CAN HELP SECTION ===== -->
+  <section class="section-padding relative overflow-hidden bg-cream">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12 md:mb-16 reveal">
+        <p class="text-gold text-sm font-semibold tracking-[0.25em] uppercase mb-3">How I Help</p>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
+          I Can <span class="text-gold">Help.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <!-- Card 1: Embrace French Culture -->
+        <div class="glass-gold glass-hover p-8 text-center reveal">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gold/15 flex items-center justify-center">
+            <svg class="w-8 h-8 text-gold-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-charcoal mb-3">Embrace the French Culture</h3>
+          <p class="text-charcoal/70 text-sm leading-relaxed">
+            Fascinated by French culture and history? Longing to read the classics in their original language? <span class="italic text-gold-dark font-medium">Voil&agrave;!</span> Let me guide you through this captivating journey with ease.
+          </p>
+        </div>
+
+        <!-- Card 2: Boost Your Career -->
+        <div class="glass-gold glass-hover p-8 text-center reveal" style="animation-delay: 0.1s;">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gold/15 flex items-center justify-center">
+            <svg class="w-8 h-8 text-gold-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-charcoal mb-3">Boost Your Career</h3>
+          <p class="text-charcoal/70 text-sm leading-relaxed">
+            Aspiring for a career in a French-speaking environment? Desiring to expand your business to French regions? <span class="italic text-gold-dark font-medium">Quelle id&eacute;e!</span> Let me equip you with the language skills and cultural understanding to get you there.
+          </p>
+        </div>
+
+        <!-- Card 3: Travel With Confidence -->
+        <div class="glass-gold glass-hover p-8 text-center reveal" style="animation-delay: 0.2s;">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-gold/15 flex items-center justify-center">
+            <svg class="w-8 h-8 text-gold-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-charcoal mb-3">Travel With Confidence</h3>
+          <p class="text-charcoal/70 text-sm leading-relaxed">
+            Dreaming of a French vacation without language barriers? <span class="italic text-gold-dark font-medium">Pas de probl&egrave;me!</span> Let's focus on conversational French and practical vocabulary to navigate your voyage with confidence.
+          </p>
+        </div>
+      </div>
+
+      <!-- And much more -->
+      <div class="text-center mt-10 reveal">
+        <p class="text-charcoal/60 text-lg font-medium mb-6">And much, much more!</p>
+        <a href="/#coaching" class="btn-primary">
+          See My Courses
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Decoration -->
+    <div class="absolute top-20 right-0 w-72 h-72 bg-gold/5 rounded-full blur-[100px] pointer-events-none"></div>
+  </section>
+
+  <!-- ===== MORE PHOTOS SECTION ===== -->
+  <section class="section-padding relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-cream to-cream-dark/20 pointer-events-none"></div>
+
+    <div class="relative max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        <div class="glass p-3 reveal">
+          <img src="/images/taking-notes.jpg" alt="Virginie taking notes" class="w-full rounded-2xl object-cover h-72 md:h-80" />
+        </div>
+        <div class="glass p-3 reveal" style="animation-delay: 0.1s;">
+          <img src="/images/teaching-online.jpg" alt="Virginie teaching online" class="w-full rounded-2xl object-cover h-72 md:h-80" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="relative py-20 md:py-28 overflow-hidden">
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-charcoal"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-gold/8 via-transparent to-gold/5"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
+      <div class="reveal">
+        <p class="text-gold text-sm font-semibold tracking-[0.25em] uppercase mb-4">Let's Get Started</p>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
+          Let's Have a <span class="text-gold">Chat</span>
+        </h2>
+        <p class="text-white/60 text-lg max-w-xl mx-auto mb-8">
+          Get on a 15 minute meeting to talk about your goals and how we can work together.
+        </p>
+        <a href="https://calendly.com/laprofvirginie/15min" target="_blank" rel="noopener"
+           class="btn-primary text-lg px-10 py-4">
+          Book a Free Call
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Gold glow decorations -->
+    <div class="absolute top-10 left-10 w-48 h-48 bg-gold/5 rounded-full blur-[80px] pointer-events-none"></div>
+    <div class="absolute bottom-10 right-10 w-64 h-64 bg-gold/3 rounded-full blur-[100px] pointer-events-none"></div>
+  </section>
+
+  <Footer />
+</Layout>
