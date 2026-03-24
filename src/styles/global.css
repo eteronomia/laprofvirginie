@@ -369,6 +369,19 @@ body {
   }
 }
 
+.testimonials-row-3 {
+  display: grid;
+  grid-template-areas: "video3" "text3a" "text3b";
+  grid-template-columns: 1fr;
+}
+@media(min-width:1024px) {
+  .testimonials-row-3 {
+    grid-template-areas: "text3a video3" "text3b video3";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
 /* ===== VIDEO TESTIMONIAL CARD ===== */
 .video-testimonial-card {
   backdrop-filter: blur(24px) saturate(180%);

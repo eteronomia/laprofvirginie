@@ -411,13 +411,13 @@ import WaveDivider from '../components/WaveDivider.astro';
         </h2>
       </div>
 
-      <!-- ★ ROW 1: Cristina vertical video + 2 text reviews stacked beside her ★ -->
+      <!-- ★ ROW 1: Julia vertical video + 2 text reviews stacked beside her ★ -->
       <div class="testimonials-row-1 gap-6 mb-6">
 
-        <!-- Cristina — Vertical Video (9:16) -->
+        <!-- Julia — Vertical Video (9:16) -->
         <div class="video-testimonial-card reveal" style="grid-area: video1;">
           <div class="relative overflow-hidden rounded-2xl" style="aspect-ratio: 9/16;">
-            <video src="/video/testimonial-cristina.mp4" poster="/images/poster-cristina.jpg" playsinline preload="metadata" class="w-full h-full object-cover" data-testimonial-video></video>
+            <video src="/video/testimonial-julia.mp4" poster="/images/poster-julia.jpg" playsinline preload="metadata" class="w-full h-full object-cover" data-testimonial-video></video>
             <div class="testimonial-play-overlay" data-play-btn>
               <div class="w-14 h-14 rounded-full bg-gold/90 flex items-center justify-center shadow-lg pointer-events-none">
                 <svg class="w-6 h-6 text-charcoal ml-0.5 pointer-events-none" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -433,8 +433,8 @@ import WaveDivider from '../components/WaveDivider.astro';
           <div class="flex items-center gap-3 mt-4 px-1">
             <div class="w-2 h-2 rounded-full bg-gold"></div>
             <div>
-              <p class="font-semibold text-charcoal text-sm">Cristina</p>
-              <p class="text-charcoal/50 text-xs">United States</p>
+              <p class="font-semibold text-charcoal text-sm">Julia</p>
+              <p class="text-charcoal/50 text-xs">Poland</p>
             </div>
             <div class="ml-auto flex gap-0.5">
               <svg class="w-3.5 h-3.5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -515,11 +515,11 @@ import WaveDivider from '../components/WaveDivider.astro';
 
       </div>
 
-      <!-- ★ ROW 3: Remaining 3 text reviews in classic 3-col grid ★ -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- ★ ROW 3: Cristina vertical video (RIGHT) + Laura & Ricardo text ★ -->
+      <div class="testimonials-row-3 gap-6 mb-6">
 
-        <!-- Laura -->
-        <div class="testimonial-card reveal">
+        <!-- Laura (text, top-left) -->
+        <div class="testimonial-card reveal" style="grid-area: text3a;">
           <div class="flex items-center gap-4 mb-5">
             <img src="/images/student-christine.jpg" alt="Laura" class="w-14 h-14 rounded-full object-cover border-2 border-gold/30" />
             <div><h4 class="font-semibold text-charcoal">Laura</h4><p class="text-charcoal/50 text-sm">United States</p></div>
@@ -528,8 +528,8 @@ import WaveDivider from '../components/WaveDivider.astro';
           <p class="text-charcoal/70 text-sm leading-relaxed italic">"I feel so lucky to have Virginie as my French tutor. Her curriculum is comprehensive and challenging, but practical. Her materials incorporate French literature, music, history, culture, and current events, which creates a rich and multidimensional learning experience. Each session is a good balance between structured lessons and conversation, coupled with Virginie's warmth, engagement, and professionalism. I started as a true beginner, and over two years of weekly lessons, I have made significant progress. I am excited to continue working towards fluency!"</p>
         </div>
 
-        <!-- Ricardo -->
-        <div class="testimonial-card reveal" style="transition-delay: 0.1s;">
+        <!-- Ricardo (text, bottom-left) -->
+        <div class="testimonial-card reveal" style="grid-area: text3b; transition-delay: 0.1s;">
           <div class="flex items-center gap-4 mb-5">
             <img src="/images/student-julia.jpg" alt="Ricardo" class="w-14 h-14 rounded-full object-cover border-2 border-gold/30" />
             <div><h4 class="font-semibold text-charcoal">Ricardo</h4><p class="text-charcoal/50 text-sm">Portugal</p></div>
@@ -538,16 +538,52 @@ import WaveDivider from '../components/WaveDivider.astro';
           <p class="text-charcoal/70 text-sm leading-relaxed italic">"I really enjoyed the Atelier! The exposure to spoken French it provided gave me the confidence I needed to speak and I feel the difference everyday! The subjects were always interesting, fueling our ability to think and discuss about any topic. Also, the small notes and exercises that were provided after each session helped me to improve or, at least, be aware of certain details."</p>
         </div>
 
-        <!-- Lisiane -->
-        <div class="testimonial-card reveal" style="transition-delay: 0.2s;">
-          <div class="flex items-center gap-4 mb-5">
-            <img src="/images/student-karina.png" alt="Lisiane" class="w-14 h-14 rounded-full object-cover border-2 border-gold/30" />
-            <div><h4 class="font-semibold text-charcoal">Lisiane</h4><p class="text-charcoal/50 text-sm">Brazil</p></div>
+        <!-- Cristina — Vertical Video (9:16, RIGHT side) -->
+        <div class="video-testimonial-card reveal" style="grid-area: video3; transition-delay: 0.15s;">
+          <div class="relative overflow-hidden rounded-2xl" style="aspect-ratio: 9/16;">
+            <video src="/video/testimonial-cristina.mp4" poster="/images/poster-cristina.jpg" playsinline preload="metadata" class="w-full h-full object-cover" data-testimonial-video></video>
+            <div class="testimonial-play-overlay" onclick="window.__tPlay(this)">
+              <div class="w-14 h-14 rounded-full bg-gold/90 flex items-center justify-center shadow-lg pointer-events-none">
+                <svg class="w-6 h-6 text-charcoal ml-0.5 pointer-events-none" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="testimonial-pause-overlay" onclick="window.__tPause(this)">
+              <div class="w-12 h-12 rounded-full bg-charcoal/50 flex items-center justify-center backdrop-blur-sm pointer-events-none">
+                <svg class="w-5 h-5 text-white pointer-events-none" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+              </div>
+            </div>
+            <div class="absolute inset-0 rounded-2xl pointer-events-none" style="box-shadow: inset 0 0 30px rgba(0,0,0,0.08);"></div>
           </div>
-          <div class="flex gap-1 mb-4"><svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></div>
-          <p class="text-charcoal/70 text-sm leading-relaxed italic">"Avec Virginie on apprend, on ose parler, on se trompe sans stress et surtout on rigole. L'ambiance est ultra agr&eacute;able et amusante. Virginie nous met &agrave; l'aise. R&eacute;sultat : on progresse sans m&ecirc;me s'en rendre compte. Si tu h&eacute;sites encore, fonce. Vraiment !"</p>
+          <div class="flex items-center gap-3 mt-4 px-1">
+            <div class="w-2 h-2 rounded-full bg-gold"></div>
+            <div>
+              <p class="font-semibold text-charcoal text-sm">Cristina</p>
+              <p class="text-charcoal/50 text-xs">United States</p>
+            </div>
+            <div class="ml-auto flex gap-0.5">
+              <svg class="w-3.5 h-3.5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-3.5 h-3.5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+          </div>
         </div>
 
+      </div>
+
+      <!-- ★ ROW 4: Lisiane centered ★ -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="md:col-start-2">
+          <div class="testimonial-card reveal">
+            <div class="flex items-center gap-4 mb-5">
+              <img src="/images/student-karina.png" alt="Lisiane" class="w-14 h-14 rounded-full object-cover border-2 border-gold/30" />
+              <div><h4 class="font-semibold text-charcoal">Lisiane</h4><p class="text-charcoal/50 text-sm">Brazil</p></div>
+            </div>
+            <div class="flex gap-1 mb-4"><svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg></div>
+            <p class="text-charcoal/70 text-sm leading-relaxed italic">"Avec Virginie on apprend, on ose parler, on se trompe sans stress et surtout on rigole. L'ambiance est ultra agr&eacute;able et amusante. Virginie nous met &agrave; l'aise. R&eacute;sultat : on progresse sans m&ecirc;me s'en rendre compte. Si tu h&eacute;sites encore, fonce. Vraiment !"</p>
+          </div>
+        </div>
       </div>
     </div>
 
